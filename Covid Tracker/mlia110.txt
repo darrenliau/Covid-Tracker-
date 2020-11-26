@@ -1,0 +1,1 @@
+The design show a simple dashboard that tracks the latest covid-19 cases around the world and in New Zealand. It shows the readers about the infectious, Deaths and Recovered cases around the world and in New Zealand. A graph is drawn showing the cases which are recovered, deaths and active. It uses a sidebar to navigate through Global Statistic and Covid 19-cases in New Zealand.

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title id="headtitle">New Zealand Covid-19 Tracker</title>
+        <script src="mlia110.js"></script>
+        <link rel = "icon" href = "https://findicons.com/files/icons/2448/wpzoom_developer/47/virus.png" >
+
+        <link rel="stylesheet" type="text/css" href="mlia110.css">
+        
+    </head>
+
+    <body>
+        
+        <div id="sidebar" class="sidebar">
+            <div class="container">
+
+                <a class="closebtn" onclick=closeSide()>x</a>
+                
+                <a id="Global" onclick=showGlobal()>Global Stats</a>
+                
+                <a id="nz" onclick=showNZ()>New Zealand</a>
+
+            </div>
+
+        </div>
+
+
+        <div id="main">
+            <div id="topbar">
+                <div id="sidebtn">
+                    <button class="openbtn" onclick=toggleSide()>
+                        <img src="https://cdn.onlinewebfonts.com/svg/img_403289.png" style="height:40px;margin-right: 10px;">
+                    
+                        
+                    </button>
+                </div>
+                <div id="titlecolumn">
+                    <a class="home" style="color:black" href="mlia110.html">
+                        <img src="https://findicons.com/files/icons/2448/wpzoom_developer/47/virus.png" style="height:40px;margin-right: 10px;">
+                        <span class="title1" style="font-weight: bold;">Covid-19 Tracker</span>
+                    </a>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <div id="Globalcanvas" style="display: none;">
+                <span id="subheader">
+                    Global Statistics of Covid-19
+                </span>
+                <div class="row">
+                    <div class="column">
+                        <h1 id="numberofinfections">0</h1>
+                        
+                        <h2 style="color: blue">Infectious</h2>
+                    </div>
+                    <div class="column">
+                        <h1 id="numberofdeaths">0</h1>
+                        
+                        <h2 style="color: red">Deaths</h2>
+                    </div>
+                    <div class="column">
+                        <h1 id="numberofrecovered">0</h1>
+                        
+                        <h2 style="color: green;">Recovered</h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="NZcanvas">
+                <span id="subheader">
+                    Covid-19 Cases in NZ
+                </span>
+                <div class="row">
+                    <div class="column">
+                        <h1 id="numberofinfections1">0</h1>
+                        <h3 id ="infectiousyesterday1"></h3>
+                        <h2 style="color: blue">Infectious</h2>
+                    </div>
+                    <div class="column">
+                        <h1 id="numberofdeaths1">0</h1>
+                        <h3 id ="deathsyesterday1"></h3>
+                        <h2 style="color: red">Deaths</h2>
+                    </div>
+                    <div class="column">
+                        <h1 id="numberofrecovered1">0</h1>
+                        <h3 id ="recoveredyesterday1"></h3>
+                        <h2 style="color: green;">Recovered</h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="GraphCanvas">
+                <div id="graphtitle">
+                    
+                </div>
+                <div id="graph1">
+
+
+                </div>
+            </div>
+        
+            <script>showNZ()</script>
+        <div id="lastupdate">
+            <span id="date">
+                
+            </span>
+        </div>
+        </div>
+    </body>
+</html>

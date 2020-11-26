@@ -1,0 +1,154 @@
+body{
+    background-color: lightblue;
+}
+.sidebar{
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x:hidden;
+    transition:0.5s;
+    padding-top:60px;
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+.sidebar a:hover{
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    padding : 10px 15px;
+    border: none;
+    margin-right:20px;
+    
+
+}
+.openbtn:hover{
+    background-color: #444;
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#topbar{
+    background-color: #f8f2f2;
+    align-items: center;
+    display: flex;
+    
+    justify-content: space-between;
+}
+.title1{
+    font-family: "Helvetica Neue","Ubuntu Mono";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+}
+#titlecolumn,#graph1{
+    justify-content: center;
+    display:flex;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.column{
+    flex: 0 0 33.33333333333333%;
+    max-width: 33.333333333333%
+}
+h1{
+    text-align: center;
+    font-size: 40px;  
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+
+}
+h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+#subheader{
+    font-family: "Helvetica Neue","Ubuntu Mono";
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom:30px ;
+    display: flex;
+}
+#Globalcanvas{
+    margin-top: 15px;
+}
+#graphtitle{
+    font-family: "Helvetica Neue","Ubuntu Mono";
+    font-weight: bold;
+    font-size: 25px;
+}
+#GraphCanvas{
+    padding-top: 70px;
+
+}
+#graph1{
+    padding-top: 30px;
+    
+}
+svg{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        max-width: 200px;
+
+    }
+    .title1 {
+
+        font-size: 25px;
+    }
+    img{
+        max-width: 25px;
+        max-height:25px;
+    }
+    #subheader{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+    h2,#graphtitle{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    #graph1{
+        
+        width: 400;
+    }
+  }
+  
